@@ -27,15 +27,17 @@ function createTodo(inputValue) {
 }
 
 function handleInput(e) {
-  e.preventDefault();
-  var inputValue = document.querySelector('.text-input input').value;
-  document.querySelector('.todos')
-    .appendChild(createTodo(inputValue));
+  if (e.keyCode === 13) {
+    e.preventDefault();
+    var inputValue = document.querySelector('.text-input input').value;
+    document.querySelector('.todos')
+      .appendChild(createTodo(inputValue));
+    document.querySelector('.text-input input').value = '';
+  }
 }
 
 function boot() {
   var button = document.querySelector('.text-input button');
-  $on(button, 'click', handleInput);
 }
 
 $on(window, 'load', boot);
