@@ -4,30 +4,40 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Weather App</title>
-  <link rel="stylesheet" type="text/css" href="inline.css">
+  <title>Chat App</title>
+  <link rel="stylesheet" href="./css/materialize.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 <body>
-  <header class="header">
-    <h1 class="header__title">Weather App</h1>
-    <button id="butRefresh" class="headerButton"></button>
-    <button id="butAdd" class="headerButton"></button>
-  </header>
+  <nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo">Lets Chat</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="sass.html">Chat</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="main">
+    <div class="text-input">
+      <div class="row">
+        <form class="col s12">
+          <div class="row">
+            <div class="input-field col s10">
+              <i class="material-icons prefix">mode_edit</i>
+              <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
+              <label for="icon_prefix2">Type here</label>
+            </div>
+            <div class="col s2">
+              <button class="valign btn waves-effect waves-light" type="submit" name="action">Submit
+                <i class="material-icons right">send</i>
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div>
 
-  <main class="main" hidden>
-    <!-- Insert forecast-card.html here -->
-  </main>
-
-  <div class="dialog-container">
-    <!-- Insert add-new-city-dialog.html here -->
+    </div>
   </div>
-
-  <div class="loader">
-    <svg viewBox="0 0 32 32" width="32" height="32">
-      <circle id="spinner" cx="16" cy="16" r="14" fill="none"></circle>
-    </svg>
-  </div>
-
-  <!-- Insert link to app.js here -->
 </body>
 </html>
