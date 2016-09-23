@@ -3,7 +3,6 @@ var $on = function (target, type, callback, useCapture) {
 }
 
 function createTodo(inputValue) {
-	console.log(inputValue);
   var cardTemplate = document.querySelector('.todo-template').cloneNode(true);
   cardTemplate.removeAttribute('hidden');
   cardTemplate.classList.remove('todo-template');
