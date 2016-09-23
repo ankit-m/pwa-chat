@@ -15,7 +15,6 @@ function boot() {
   document.querySelector('.main').appendChild(getCardTemplate());
   document.querySelector('.main').appendChild(getCardTemplate());
   document.querySelector('.main').appendChild(getCardTemplate());
-  
 
 }
 
