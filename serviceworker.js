@@ -13,7 +13,7 @@
   const filesToCache = [
     '/',
     '/index.html',
-    '/scripts/app.js',
+    '/js/app.js',
     '/css/styles.css',
     '/css/materialize.css',
     '/js/materialize.js',
