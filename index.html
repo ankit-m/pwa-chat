@@ -10,55 +10,36 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   </head>
   <body>
-    <div class="main">
+    <main class="main">
       <div class="navbar-fixed">
         <nav>
           <div class="nav-wrapper">
             <a href="#" class="brand-logo">Lets Chat</a>
-            <ul id="nav-mobile" class="right hide-on-med-and-down">
-              <li>
-                <a href="sass.html">Chat</a>
-              </li>
-            </ul>
           </div>
         </nav>
       </div>
-      <div class="todos">
-      </div>
-      <div class="text-input">
-          <div class="row">
-            <form class="col s12">
-              <div class="row">
-                <div class="input-field col s10">
-                  <i class="material-icons prefix">mode_edit</i>
-                  <textarea id="icon_prefix2" class="materialize-textarea" placeholder="Type Here"></textarea>
-                </div>
-                <div class="submit col s2">
-                  <button class="btn waves-effect waves-light">Submit
-                  </button>
-                </div>
-              </div>
-            </form>
+      <br>
+      <div class="container todos"></div>
+      <br>
+      <div class="container text-input">
+        <div class="row">
+          <div class="input-field col s10">
+            <input placeholder="Type here" id="first_name2" type="text" class="validate">
+            <label class="active" for="first_name2">Todo Item</label>
           </div>
-    </div>
-      <div class="todo-template" hidden="true">
-        <div class="col s12 m7">
-          <div class="card horizontal">
-            <div class="card-image">
-              <img src="http://lorempixel.com/100/190/nature/6">
-            </div>
-            <div class="card-stacked">
-              <div class="card-content">
-                <p>I am a very simple card. I am good at containing small bits of information.</p>
-              </div>
-              <div class="card-action">
-                <a href="#">This is a link</a>
-              </div>
-            </div>
+          <div class="submit col s2">
+            <button class="btn waves-effect waves-light">Submit
+            </button>
           </div>
         </div>
       </div>
-      <script src="./js/app.js"></script>
-      <script type="text/javascript" src="serviceworker.js"></script>
-    </body>
+      <div class="todo-template" hidden="true">
+        <ul class="collection with-header">
+          <li class="collection-item"><div>%data%<a href="#!" class="secondary-content"><i class="material-icons">done</i></a></div></li>
+        </ul>
+      </div>
+    </main>
+    <script src="./js/app.js"></script>
+    <script type="text/javascript" src="serviceworker.js"></script>
+  </body>
 </html>

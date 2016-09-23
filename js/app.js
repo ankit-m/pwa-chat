@@ -13,7 +13,7 @@ function createTodo(inputValue) {
 
 function handleInput(e) {
 		e.preventDefault();
-		var inputValue = document.querySelector('.text-input textarea').value;
+		var inputValue = document.querySelector('.text-input input').value;
 		document.querySelector('.todos')
 			.appendChild(createTodo(inputValue));
 }
