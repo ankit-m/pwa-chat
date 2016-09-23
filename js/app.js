@@ -14,6 +14,9 @@ function createTodo(inputValue) {
 	cardTemplate.classList.remove('todo-template');
 	cardTemplate.classList.add('todo');
 
+	$on(cardTemplate, 'click', () => {
+		cardTemplate.parentNode.removeChild(cardTemplate);
+	});
   return cardTemplate;
 }
 
@@ -22,6 +25,7 @@ function handleInput(e) {
 		var inputValue = document.querySelector('.text-input input').value;
 		document.querySelector('.todos')
 			.appendChild(createTodo(inputValue));
+		document.querySelector('.text-input input').value = '';
 }
 
 function boot() {
