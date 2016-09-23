@@ -16,3 +16,25 @@
 .justify-center {
   justify-content: center;
 }
+
+.no-padding-bottom {
+  padding-bottom: 0;
+}
+
+.no-margin-bottom {
+  margin-bottom: 0;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.main {
+  flex: 1 0 auto;
+}
+
+.todos {
+  margin: 10%;
+}
