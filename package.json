@@ -1,0 +1,11 @@
+{
+  "name": "pwa_hn",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kushan Joshi",
+  "license": "ISC"
+}
